@@ -1,0 +1,11 @@
+package docGhiObj;
+import kethua.Person.Student;
+
+public class SingleObjectInputOutputStreamExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

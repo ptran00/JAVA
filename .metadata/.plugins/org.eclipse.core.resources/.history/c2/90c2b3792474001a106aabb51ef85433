@@ -1,0 +1,35 @@
+package docGhiObj;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+import kethua.Person.Student;
+
+public class SingleObjectInputOutputStreamExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Student student1 = new Student("Tran Hong Thuy","151716788",31,"Tokyo","14TE457",3,154,"N1",65.5f);
+		//Student student2 = new Student("Le My Han","15238",24,"Tokyo","134tr32",3,154,"N1",65.5f);
+		//Student student3 = new Student("Han Ki Anh","12224788",31,"Chiba","14TE457",3,154,"N1",65.5f);
+		//Student student4 = new Student("Tran Gio Ha","15d26788",34,"Tokyo","113DE57",3,154,"Null",65.5f);
+		
+		//ghi file
+		try {
+			FileOutputStream fos = new FileOutputStream("Student.DAT");
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(student1);
+			oos.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

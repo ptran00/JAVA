@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Student student2 = new Student(&quot;Le My Han&quot;,&quot;15238&quot;,24,&quot;Tokyo&quot;,&quot;134tr32&quot;,3,154,&quot;N1&quot;,65.5f);"/>
+		<list key="findhistory">
+			<item value="Student student2 = new Student(&quot;Le My Han&quot;,&quot;15238&quot;,24,&quot;Tokyo&quot;,&quot;134tr32&quot;,3,154,&quot;N1&quot;,65.5f);"/>
+		</list>
+	</section>
+</section>
