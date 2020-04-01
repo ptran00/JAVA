@@ -1,0 +1,47 @@
+package kethua;
+
+public class Student extends Person{
+	private String   studentID;
+	private int      studentyears;
+	private int      unitRecord;
+	private String	 qualified;
+	
+	
+	
+	
+	public Student(String fullName,string ID,int age,String address,String studentID, int studentyears, int unitRecord, String qualified) {
+		super();
+		this.studentID = studentID;
+		this.studentyears = studentyears;
+		this.unitRecord = unitRecord;
+		this.qualified = qualified;
+	}
+	
+	public String getStudentID() {
+		return studentID;
+	}
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
+	public int getStudentyears() {
+		return studentyears;
+	}
+	public void setStudentyears(int studentyears) {
+		this.studentyears = studentyears;
+	}
+	public int getUnitRecord() {
+		return unitRecord;
+	}
+	public void setUnitRecord(int unit) {
+		this.unitRecord = unit;
+	}
+	public String getQualified() {
+		return qualified;
+	}
+	public void setQualified(String qualified) {
+		this.qualified = qualified;
+	}
+   
+	
+	
+}

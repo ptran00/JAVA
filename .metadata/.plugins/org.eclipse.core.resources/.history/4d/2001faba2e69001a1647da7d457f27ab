@@ -1,0 +1,14 @@
+package kethua;
+
+public class oppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		Student student = new Student("Tran Van Phong","151716788",31,"Tokyo","14TE457",3,154,"N1",32.5d);
+		
+		student.showInfo();
+		
+	}
+
+}

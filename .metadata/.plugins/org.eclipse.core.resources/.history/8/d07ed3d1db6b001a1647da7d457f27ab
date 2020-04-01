@@ -1,0 +1,62 @@
+package kethua;
+
+public class oppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person person = new Person("Nguyen Huu Hien","1232452",23,"Chiba");
+		Student student1 = new Student("Tran Hong Thuy","151716788",31,"Tokyo","14TE457",3,154,"N1",65.5f);
+		Student student2 = new Student("Le My Han","15238",24,"Tokyo","134tr32",3,154,"N1",65.5f);
+		Student student3 = new Student("Han Ki Anh","12224788",31,"Chiba","14TE457",3,154,"N1",65.5f);
+		Student student4 = new Student("Tran Gio Ha","15d26788",34,"Tokyo","113DE57",3,154,"Null",65.5f);
+		Student student5 = new Student("Luu Ha Hung","24716788",23,"Chiba","123457",3,154,"N2",43.5f);
+		Employee employee1 = new Employee("Tran Van Phong","151716788",31,"Tokyo","14TE4578",23.4f,30.0f);
+		Employee employee2 = new Employee("Nguyen Thuy Dung","151712318",31,"Saitama","123TR23",23.4f,40.0f);
+		Employee employee3 = new Employee("Nguyen Hanh","1212318",23,"Kanagawa","1qr24",24.0f,420.0f);
+		
+
+		
+		//tinh da hinh
+		Person p[] = new Person[10];
+		p[0] = person;
+		p[1] = student1;
+		p[2] = student2;
+		p[3] = student3;
+		p[4] = student4;
+		p[5] = student5;
+		p[6] = employee1;
+		p[7] = employee2;
+		p[8] = employee3;
+		
+		Student []student = new Student[10];
+		Employee[]employee = new Employee[9];
+		int tmp = 0;
+		int  tnp = 0;
+		for(int i = 0;i<p.length;i++) {
+			if(p[i] instanceof Student) {
+				student[tmp] = (Student)p[i];
+				tmp++;
+			}
+			if(p[i] instanceof Employee) {
+				employee[tnp] = (Employee)p[i];
+				tnp++;
+			}
+		}
+		for(Student std : student) {
+			if(std != null) {
+			System.out.println("Thong tin hoc sinh\n");
+			std.showInfo();
+			System.out.println("\n===========\n");
+			}
+		}
+		for(Employee epl : employee) {
+			if(epl != null) {
+			System.out.println("Thong tin cong nhan\n");
+			epl.showInfo();
+			System.out.println("\n===========\n");
+			}
+		}
+
+	}
+
+}

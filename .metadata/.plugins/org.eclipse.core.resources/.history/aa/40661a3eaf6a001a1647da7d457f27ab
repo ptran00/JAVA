@@ -1,0 +1,24 @@
+package kethua;
+
+public class oppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person person = new Person("Nguyen Huu Hien","1232452",23,"Chiba");
+		Student student = new Student("Tran Hong Thuy","151716788",31,"Tokyo","14TE457",3,154,"N1",65.5f);
+		Employee employee = new Employee("Tran Van Phong","151716788",31,"Tokyo","14TE4578",23.4f,30.0f);
+		
+		//tinh da hinh
+		Person p[] = new Person[3];
+		p[0] = person;
+		p[1] = student;
+		p[2] = employee;
+		
+		for(Person ps : p) {
+			System.out.println("\n==================\n");
+			ps.showInfo();
+		}
+		
+	}
+
+}

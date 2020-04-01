@@ -1,0 +1,29 @@
+package kethua;
+
+public class Person {
+	private String fullName;
+	private String ID;
+	private String Sex;
+	
+	 public Person ()	{}
+	 
+	 public String getName() {
+		 return fullName;
+	 }
+	 public void setName(String fullname) {
+		 this.fullName = fullname;
+	 }
+	 public String getID() {
+		 return ID;
+	 }
+	 public void setID(String id) {
+		 this.ID = id;
+	 }
+	 public String getSex() {
+		 return Sex;
+	 }
+	 public void setSex(String sex) {
+		 this.Sex = sex;
+	 }
+
+}

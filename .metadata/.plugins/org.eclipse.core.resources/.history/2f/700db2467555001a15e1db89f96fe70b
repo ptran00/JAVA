@@ -1,0 +1,37 @@
+package javaCore_Basic;
+
+import java.util.Scanner;
+
+public class Input {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap so nguyen : ");
+		int a = sc.nextInt();
+		System.out.println("Nhap so Thuc Float : ");
+		float b = sc.nextFloat();
+		System.out.println("Nhap so Thuc Double : ");
+		double c = sc.nextDouble();
+		System.out.println("Nhap vao 1 chuoi string : ");
+		@SuppressWarnings("unused")
+		String as = next();
+		String d = sc.nextLine();
+		System.out.println("So nguyen: " + a + "\nso thuc Float: " + b + "\nSo thuc Double: " + c + "\nChuoi: " + d);
+
+		
+		sc.close();
+		
+	}
+
+	private static String next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static String nextLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

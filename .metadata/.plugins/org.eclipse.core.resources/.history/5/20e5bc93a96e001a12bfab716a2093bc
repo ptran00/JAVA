@@ -1,0 +1,21 @@
+package kethua;
+
+import kethua.Person;
+import kethua.Employee;
+import kethua.Student;
+
+import java.util.logging.*;
+
+public class Bai63_Logging   {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student std1 = new Student("Tran Hong Thuy","151716788",31,"Tokyo","14TE457",3,154,"N1",65.5f);
+		
+		System.out.print(std1);
+        Logger.getGlobal().info(std1.toString());
+        
+	}
+
+}

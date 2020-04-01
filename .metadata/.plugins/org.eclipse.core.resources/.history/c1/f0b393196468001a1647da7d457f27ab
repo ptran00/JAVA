@@ -1,0 +1,14 @@
+package kethua;
+
+public class Person {
+	private String fullName;
+	private String ID;
+	private String sex;
+	
+	 public Person ()	{}
+	 
+	 public String getName() {
+		 getNam = 
+	 }
+
+}
